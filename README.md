@@ -8,3 +8,5 @@ Utilizare elemente HTML5 si div-uri pentru layout
 Impartire pagini in sectiuni 
 Creare butoane si meniuri doar din cod
 Adaugare componente Uikit obligatorii
+
+Nu am folosit model
