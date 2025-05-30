@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre Noi | Horizon</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="uk-navbar-container" uk-navbar uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 200">
+            <div class="uk-navbar-left uk-margin-left">
+                <a class="uk-navbar-item uk-logo" href="index.html">Horizon</a>
+            </div>
+            
+            <!-- Meniu Desktop -->
+            <div class="uk-navbar-right uk-visible@m uk-margin-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="index.html">Acasă</a></li>
+                    <li class="uk-active"><a href="about.html">Despre</a></li>
+                    <li><a href="services.html">Servicii</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="uk-navbar-item">
+                    <a class="uk-button uk-button-primary" href="#contact">Începe Acum</a>
+                </div>
+            </div>
+            
+            <!-- Buton Meniu Mobil -->
+            <div class="uk-navbar-right uk-hidden@m uk-margin-right">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Meniu Off-canvas pentru Mobil -->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3>Horizon</h3>
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="index.html">Acasă</a></li>
+                <li class="uk-active"><a href="about.html">Despre</a></li>
+                <li><a href="services.html">Servicii</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a class="uk-button uk-button-primary uk-width-1-1" href="#contact">Începe Acum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Secțiunea Hero -->
+    <section class="uk-section uk-section-primary uk-light uk-padding-remove-bottom">
+        <div class="uk-container">
+            <div class="uk-grid-large" uk-grid>
+                <div class="uk-width-1-2@m uk-flex uk-flex-middle">
+                    <div>
+                        <h1 class="uk-heading-medium">Despre Horizon</h1>
+                        <p class="uk-text-lead">Suntem o echipă de profesioniști pasionați dedicați transformării afacerilor prin soluții inovatoare.</p>
+                        <a href="#team" class="uk-button uk-button-default uk-margin-top" uk-scroll>Cunoaște Echipa</a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m uk-visible@m">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://images.pexels.com/photos/1181605/pexels-photo-1181605.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Spațiu de Birou" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Întâlnire Echipă" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/1181371/pexels-photo-1181371.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Lucru în Echipă" uk-cover>
+                            </li>
+                        </ul>
+                        <div class="uk-position-bottom-center uk-position-small">
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-visible@m" data-src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600" uk-img>
+        </div>
+    </section>
+
+    <!-- Secțiunea Alert -->
+    <div class="uk-alert-success" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <div class="uk-container uk-container-small">
+            <p><span uk-icon="icon: check"></span> Suntem mândri să anunțăm că Horizon a fost recunoscut ca unul dintre cei mai buni furnizori de soluții de afaceri pentru 2025!</p>
+        </div>
+    </div>
+
+    <!-- Secțiunea Povestea Noastră -->
+    <section class="uk-section uk-section-default">
+        <div class="uk-container">
+            <div class="uk-grid-large uk-flex-middle" uk-grid>
+                <div class="uk-width-2-5@m">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; autoplay: true; autoplay-interval: 5000">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Istoria Companiei" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/3182759/pexels-photo-3182759.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Creșterea Companiei" uk-cover>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                </div>
+                <div class="uk-width-3-5@m">
+                    <h2>Povestea Noastră</h2>
+                    <hr class="uk-divider-small">
+                    <article class="uk-article">
+                        <p class="uk-text-lead">Fondată în 2010, Horizon a început cu o misiune simplă: să ajutăm afacerile să navigheze în peisajul digital în rapidă evoluție.</p>
+                        <p>Ce a început ca o echipă de trei antreprenori pasionați s-a transformat într-o companie completă de soluții de afaceri cu peste 50 de profesioniști talentați în multiple discipline.</p>
+                        <p>De-a lungul călătoriei noastre, ne-am menținut valorile fundamentale de inovație, integritate și servicii centrate pe client. Aceste principii ghidează fiecare proiect pe care îl întreprindem și fiecare relație pe care o construim.</p>
+                        <p>Astăzi, Horizon deservește clienți din 30 de țări, ajutând afaceri de toate dimensiunile să-și atingă obiectivele prin planificare strategică, transformare digitală și suport continuu.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Valorile Noastre -->
+    <section class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>Valorile Noastre</span></h2>
+            <p class="uk-text-center uk-margin-medium-bottom">Principiile fundamentale care ne ghidează în tot ceea ce facem</p>
+            
+            <div class="uk-child-width-1-3@m uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-body uk-card-hover uk-flex uk-flex-column uk-animation-slide-bottom">
+                        <div class="uk-card-media-top uk-text-center uk-margin-bottom">
+                            <span uk-icon="icon: heart; ratio: 3.5"></span>
+                        </div>
+                        <h3 class="uk-card-title uk-text-center">Pasiune</h3>
+                        <p>Suntem profund pasionați de ceea ce facem și ne pasă cu adevărat de succesul clienților noștri. Această pasiune ne determină să mergem dincolo de așteptări în fiecare proiect.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body uk-card-hover uk-flex uk-flex-column uk-animation-slide-bottom">
+                        <div class="uk-card-media-top uk-text-center uk-margin-bottom">
+                            <span uk-icon="icon: commenting; ratio: 3.5"></span>
+                        </div>
+                        <h3 class="uk-card-title uk-text-center">Transparență</h3>
+                        <p>Credem în comunicare deschisă și onestă. Clienții noștri știu întotdeauna exact unde se află proiectele lor, ce provocări întâmpinăm și cum plănuim să le depășim.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body uk-card-hover uk-flex uk-flex-column uk-animation-slide-bottom">
+                        <div class="uk-card-media-top uk-text-center uk-margin-bottom">
+                            <span uk-icon="icon: bolt; ratio: 3.5"></span>
+                        </div>
+                        <h3 class="uk-card-title uk-text-center">Inovație</h3>
+                        <p>Explorăm constant noi tehnologii, metodologii și strategii pentru a ne asigura că clienții noștri rămân în fața competiției în industriile lor respective.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Echipa -->
+    <section id="team" class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>Echipa Noastră</span></h2>
+            <p class="uk-text-center uk-margin-medium-bottom">Cunoaște profesioniștii talentați din spatele succesului Horizon</p>
+            
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <a href="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Ioan Popescu - CEO & Fondator" uk-lightbox>
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Ioan Popescu">
+                            </a>
+                        </div>
+                        <div class="uk-card-body uk-text-center">
+                            <h3 class="uk-card-title">Ioan Popescu</h3>
+                            <p class="uk-text-meta uk-margin-remove-top">CEO & Fondator</p>
+                            <div class="uk-flex uk-flex-center uk-margin-small-top">
+                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
+                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="linkedin"></a>
+                                <a href="#" class="uk-icon-link" uk-icon="mail"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <a href="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Elena Dumitrescu - Director Marketing" uk-lightbox>
+                                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Elena Dumitrescu">
+                            </a>
+                        </div>
+                        <div class="uk-card-body uk-text-center">
+                            <h3 class="uk-card-title">Elena Dumitrescu</h3>
+                            <p class="uk-text-meta uk-margin-remove-top">Director Marketing</p>
+                            <div class="uk-flex uk-flex-center uk-margin-small-top">
+                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
+                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="linkedin"></a>
+                                <a href="#" class="uk-icon-link" uk-icon="mail"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <a href="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Robert Ionescu - Lead Tehnic" uk-lightbox>
+                                <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Robert Ionescu">
+                            </a>
+                        </div>
+                        <div class="uk-card-body uk-text-center">
+                            <h3 class="uk-card-title">Robert Ionescu</h3>
+                            <p class="uk-text-meta uk-margin-remove-top">Lead Tehnic</p>
+                            <div class="uk-flex uk-flex-center uk-margin-small-top">
+                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
+                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="linkedin"></a>
+                                <a href="#" class="uk-icon-link" uk-icon="mail"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <a href="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Sofia Marinescu - Strateg de Afaceri" uk-lightbox>
+                                <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Sofia Marinescu">
+                            </a>
+                        </div>
+                        <div class="uk-card-body uk-text-center">
+                            <h3 class="uk-card-title">Sofia Marinescu</h3>
+                            <p class="uk-text-meta uk-margin-remove-top">Strateg de Afaceri</p>
+                            <div class="uk-flex uk-flex-center uk-margin-small-top">
+                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
+                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="linkedin"></a>
+                                <a href="#" class="uk-icon-link" uk-icon="mail"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Cronologie -->
+    <section class="uk-section uk-section-secondary uk-light">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>Călătoria Noastră</span></h2>
+            <div class="uk-grid-large" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-grid-match" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body uk-animation-toggle" tabindex="0">
+                                <div class="uk-animation-fade">
+                                    <h3 class="uk-card-title">2010</h3>
+                                    <p>Horizon este fondată de Ioan Popescu și doi parteneri, cu focus pe servicii de marketing digital.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body uk-animation-toggle" tabindex="0">
+                                <div class="uk-animation-fade">
+                                    <h3 class="uk-card-title">2014</h3>
+                                    <p>Am extins serviciile pentru a include dezvoltare web și design, dublându-ne baza de clienți.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body uk-animation-toggle" tabindex="0">
+                                <div class="uk-animation-fade">
+                                    <h3 class="uk-card-title">2018</h3>
+                                    <p>Am deschis primul nostru birou internațional și am lansat divizia de consultanță în afaceri.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body uk-animation-toggle" tabindex="0">
+                                <div class="uk-animation-fade">
+                                    <h3 class="uk-card-title">2025</h3>
+                                    <p>Astăzi, suntem o agenție completă cu peste 50 de membri în echipă, deservind clienți din întreaga lume.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Formular Contact -->
+    <section id="contact" class="uk-section uk-section-default">
+        <div class="uk-container uk-container-small">
+            <h2 class="uk-heading-line uk-text-center"><span>Contactează-ne</span></h2>
+            <p class="uk-text-center uk-margin-medium-bottom">Ai întrebări sau ești gata să începi un proiect? Contactează-ne astăzi!</p>
+            
+            <form class="uk-form-stacked uk-margin-large">
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="name">Nume</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="name" type="text" placeholder="Numele tău">
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="email">Email</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="email" type="email" placeholder="Adresa ta de email">
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="subject">Subiect</label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select" id="subject">
+                            <option>Întrebare Generală</option>
+                            <option>Dezvoltare Web</option>
+                            <option>Marketing Digital</option>
+                            <option>Consultanță în Afaceri</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="message">Mesaj</label>
+                    <div class="uk-form-controls">
+                        <textarea class="uk-textarea" id="message" rows="5" placeholder="Mesajul tău"></textarea>
+                    </div>
+                </div>
+                
+                <div class="uk-margin uk-text-center">
+                    <button class="uk-button uk-button-primary" type="submit">Trimite Mesaj</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="uk-section uk-section-secondary uk-padding-small">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <h4>Horizon</h4>
+                    <p>Oferim soluții inovatoare pentru afaceri moderne din 2010.</p>
+                    <div class="uk-flex">
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="#" class="uk-icon-button" uk-icon="linkedin"></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Link-uri Rapide</h4>
+                    <ul class="uk-list">
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="about.html">Despre</a></li>
+                        <li><a href="services.html">Servicii</a></li>
+                        <li><a href="#contact" uk-scroll>Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="uk-list">
+                        <li><span uk-icon="icon: location"></span> Strada Afacerilor 123, Oraș</li>
+                        <li><span uk-icon="icon: receiver"></span> +40 755 123 456</li>
+                        <li><span uk-icon="icon: mail"></span> contact@horizon.ro</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="uk-text-center">
+                <p>&copy; 2025 Horizon. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Buton Totop -->
+    <a href="#" class="uk-totop uk-position-fixed uk-position-bottom-right uk-margin-right uk-margin-bottom" uk-totop uk-scroll></a>
+</body>
+</html>

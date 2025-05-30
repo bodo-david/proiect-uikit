@@ -1,0 +1,403 @@
+/* Custom UIkit CSS - Parametri modificați */
+
+@import url('https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css');
+
+/* 
+ * Acest fișier conține personalizări pentru framework-ul UIkit.
+ * Următorii parametri au fost modificați față de valorile implicite:
+ * 1. Culorile primare și secundare
+ * 2. Dimensiunile și familiile de fonturi
+ * 3. Valorile de spațiere și padding
+ */
+
+/* ========================================================================
+   Variabile Personalizate
+ ========================================================================== */
+
+:root {
+    /* Paleta de culori personalizată */
+    --color-primary: #2563eb;
+    --color-primary-light: #3b82f6;
+    --color-primary-dark: #1d4ed8;
+    --color-secondary: #0f766e;
+    --color-secondary-light: #14b8a6;
+    --color-secondary-dark: #0f5259;
+    --color-accent: #f97316;
+    --color-accent-light: #fb923c;
+    --color-accent-dark: #ea580c;
+    --color-success: #16a34a;
+    --color-warning: #eab308;
+    --color-danger: #dc2626;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+    
+    /* Tipografie */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    
+    /* Spațiere (sistem de 8px) */
+    --spacing-1: 8px;
+    --spacing-2: 16px;
+    --spacing-3: 24px;
+    --spacing-4: 32px;
+    --spacing-5: 40px;
+    --spacing-6: 48px;
+}
+
+/* ========================================================================
+   Personalizare Font
+ ========================================================================== */
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--color-gray-800);
+}
+
+h1, h2, h3, h4, h5, h6,
+.uk-heading-small,
+.uk-heading-medium,
+.uk-heading-large,
+.uk-heading-xlarge,
+.uk-heading-2xlarge,
+.uk-navbar-item,
+.uk-navbar-nav > li > a,
+.uk-button,
+.uk-card-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+
+.uk-text-lead {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+/* ========================================================================
+   Personalizare Culori
+ ========================================================================== */
+
+/* Primary */
+.uk-button-primary {
+    background-color: var(--color-primary);
+}
+
+.uk-button-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.uk-section-primary {
+    background-color: var(--color-primary);
+}
+
+.uk-alert-primary {
+    background-color: var(--color-primary-light);
+    color: white;
+}
+
+.uk-text-primary {
+    color: var(--color-primary) !important;
+}
+
+/* Secondary */
+.uk-button-secondary {
+    background-color: var(--color-secondary);
+}
+
+.uk-button-secondary:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+.uk-section-secondary {
+    background-color: var(--color-secondary);
+}
+
+.uk-text-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.uk-card-secondary {
+    background-color: var(--color-secondary);
+}
+
+/* Success */
+.uk-alert-success {
+    background-color: var(--color-success);
+    color: white;
+}
+
+/* Warning */
+.uk-alert-warning {
+    background-color: var(--color-warning);
+    color: var(--color-gray-900);
+}
+
+/* Danger */
+.uk-alert-danger {
+    background-color: var(--color-danger);
+    color: white;
+}
+
+/* ========================================================================
+   Component: Navbar
+ ========================================================================== */
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.uk-navbar-sticky {
+    background-color: white !important;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1);
+}
+
+.uk-navbar-nav > li > a {
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-active > a {
+    color: var(--color-primary);
+}
+
+.uk-navbar-item.uk-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+/* ========================================================================
+   Component: Button
+ ========================================================================== */
+
+.uk-button {
+    font-weight: 500;
+    text-transform: none;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.uk-button-primary,
+.uk-button-secondary {
+    color: white !important;
+}
+
+.uk-button-default {
+    border: 1px solid white;
+    color: white;
+}
+
+.uk-button-default:hover {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+.uk-button-text {
+    color: var(--color-primary);
+}
+
+.uk-button-text:hover {
+    color: var(--color-primary-dark);
+}
+
+/* ========================================================================
+   Component: Card
+ ========================================================================== */
+
+.uk-card {
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uk-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.uk-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.uk-card-default {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================================================
+   Component: Section
+ ========================================================================== */
+
+.uk-section {
+    padding-top: var(--spacing-6);
+    padding-bottom: var(--spacing-6);
+}
+
+.uk-section-default {
+    background-color: #ffffff;
+}
+
+.uk-section-muted {
+    background-color: var(--color-gray-100);
+}
+
+/* ========================================================================
+   Component: Form
+ ========================================================================== */
+
+.uk-input,
+.uk-select,
+.uk-textarea {
+    border-radius: 4px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.uk-input:focus,
+.uk-select:focus,
+.uk-textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.uk-form-label {
+    font-weight: 500;
+    margin-bottom: var(--spacing-1);
+}
+
+/* ========================================================================
+   Component: Heading
+ ========================================================================== */
+
+.uk-heading-line {
+    margin-bottom: var(--spacing-4);
+}
+
+.uk-heading-line > span {
+    padding: 0 var(--spacing-3);
+}
+
+.uk-heading-line > span:before,
+.uk-heading-line > span:after {
+    border-top: 1px solid var(--color-gray-300);
+}
+
+/* ========================================================================
+   Component: Alert
+ ========================================================================== */
+
+.uk-alert {
+    border-radius: 4px;
+    padding: var(--spacing-2);
+}
+
+/* ========================================================================
+   Component: Totop
+ ========================================================================== */
+
+.uk-totop {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-2);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.uk-totop:hover {
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+
+/* ========================================================================
+   Component: Off-canvas
+ ========================================================================== */
+
+.uk-offcanvas-bar {
+    background-color: var(--color-gray-900);
+}
+
+.uk-offcanvas-bar .uk-nav-default > li > a {
+    color: var(--color-gray-200);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    padding: var(--spacing-1) 0;
+}
+
+.uk-offcanvas-bar .uk-nav-default > li.uk-active > a {
+    color: white;
+    font-weight: 600;
+}
+
+/* ========================================================================
+   Component: Slideshow
+ ========================================================================== */
+
+.uk-slideshow-items {
+    border-radius: 8px;
+}
+
+/* ========================================================================
+   Component: Lightbox
+ ========================================================================== */
+
+.uk-lightbox {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* ========================================================================
+   Component: Animation
+ ========================================================================== */
+
+.uk-animation-toggle:hover .uk-animation-scale-up,
+.uk-animation-toggle:focus .uk-animation-scale-up {
+    animation-name: uk-animation-scale-up;
+}
+
+/* ========================================================================
+   Ajustări Responsive
+ ========================================================================== */
+
+@media (max-width: 960px) {
+    .uk-section {
+        padding-top: var(--spacing-4);
+        padding-bottom: var(--spacing-4);
+    }
+    
+    .uk-heading-medium {
+        font-size: 2.2rem;
+    }
+    
+    .uk-card-body {
+        padding: var(--spacing-3);
+    }
+}
+
+@media (max-width: 640px) {
+    .uk-section {
+        padding-top: var(--spacing-3);
+        padding-bottom: var(--spacing-3);
+    }
+    
+    .uk-heading-medium {
+        font-size: 1.8rem;
+    }
+    
+    .uk-text-lead {
+        font-size: 1.1rem;
+    }
+    
+    .uk-card-body {
+        padding: var(--spacing-2);
+    }
+}

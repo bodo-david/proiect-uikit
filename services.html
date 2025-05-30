@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii | Horizon</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="uk-navbar-container" uk-navbar uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 200">
+            <div class="uk-navbar-left uk-margin-left">
+                <a class="uk-navbar-item uk-logo" href="index.html">Horizon</a>
+            </div>
+            
+            <!-- Meniu Desktop -->
+            <div class="uk-navbar-right uk-visible@m uk-margin-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="about.html">Despre</a></li>
+                    <li class="uk-active"><a href="services.html">Servicii</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="uk-navbar-item">
+                    <a class="uk-button uk-button-primary" href="#contact">Începe Acum</a>
+                </div>
+            </div>
+            
+            <!-- Buton Meniu Mobil -->
+            <div class="uk-navbar-right uk-hidden@m uk-margin-right">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Meniu Off-canvas pentru Mobil -->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3>Horizon</h3>
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="about.html">Despre</a></li>
+                <li class="uk-active"><a href="services.html">Servicii</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a class="uk-button uk-button-primary uk-width-1-1" href="#contact">Începe Acum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Secțiunea Hero cu Fundal -->
+    <section class="uk-section uk-section-large uk-background-cover uk-light" data-src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600" uk-img>
+        <div class="uk-container uk-container-small uk-text-center">
+            <h1 class="uk-heading-medium">Serviciile Noastre</h1>
+            <p class="uk-text-lead">Soluții complete concepute pentru a ajuta afacerea ta să prospere în peisajul competitiv actual</p>
+            <a href="#service-categories" class="uk-button uk-button-primary uk-margin-top" uk-scroll>Explorează Serviciile</a>
+        </div>
+    </section>
+
+    <!-- Secțiunea Alert -->
+    <div class="uk-alert-warning" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <div class="uk-container uk-container-small">
+            <p><span uk-icon="icon: warning"></span> Ofertă limitată: Programează o consultație până la sfârșitul lunii și primești gratuit un raport de analiză a afacerii.</p>
+        </div>
+    </div>
+
+    <!-- Categorii de Servicii -->
+    <section id="service-categories" class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>Ce Oferim</span></h2>
+            <p class="uk-text-center uk-margin-medium-bottom">Oferim soluții complete pentru a ajuta afacerile în fiecare etapă a dezvoltării lor</p>
+            
+            <div class="uk-child-width-1-3@m uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-animation-scale-up">
+                        <div class="uk-card-media-top uk-text-center uk-padding">
+                            <span uk-icon="icon: desktop; ratio: 4"></span>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Dezvoltare Web</h3>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Design Website Responsiv</li>
+                                <li>Soluții E-commerce</li>
+                                <li>Sisteme de Management al Conținutului</li>
+                                <li>Aplicații Web Personalizate</li>
+                                <li>Mentenanță Website</li>
+                            </ul>
+                            <a href="#web-development" class="uk-button uk-button-text" uk-scroll>Află mai multe</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-animation-scale-up">
+                        <div class="uk-card-media-top uk-text-center uk-padding">
+                            <span uk-icon="icon: social; ratio: 4"></span>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Marketing Digital</h3>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Optimizare pentru Motoare de Căutare (SEO)</li>
+                                <li>Administrare Social Media</li>
+                                <li>Publicitate Pay-Per-Click</li>
+                                <li>Campanii de Email Marketing</li>
+                                <li>Strategie și Creare de Conținut</li>
+                            </ul>
+                            <a href="#digital-marketing" class="uk-button uk-button-text" uk-scroll>Află mai multe</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-animation-scale-up">
+                        <div class="uk-card-media-top uk-text-center uk-padding">
+                            <span uk-icon="icon: lifesaver; ratio: 4"></span>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Consultanță în Afaceri</h3>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Planificare Strategică</li>
+                                <li>Optimizarea Proceselor de Afaceri</li>
+                                <li>Cercetare și Analiză de Piață</li>
+                                <li>Strategii de Creștere și Expansiune</li>
+                                <li>Planificare și Analiză Financiară</li>
+                            </ul>
+                            <a href="#business-consulting" class="uk-button uk-button-text" uk-scroll>Află mai multe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Dezvoltare Web -->
+    <section id="web-development" class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <div class="uk-grid-large uk-flex-middle" uk-grid>
+                <div class="uk-width-2-5@m">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 5000">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Dezvoltare Web" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Programare" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Design Web" uk-cover>
+                            </li>
+                        </ul>
+                        <div class="uk-position-bottom-center uk-position-small">
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-3-5@m">
+                    <h2>Dezvoltare Web</h2>
+                    <hr class="uk-divider-small">
+                    <p class="uk-text-lead">Soluții web personalizate care generează rezultate și îți îmbunătățesc prezența online.</p>
+                    <p>Echipa noastră de dezvoltare web creează site-uri web uimitoare și funcționale care nu doar arată excelent, ci performează excepțional. Ne concentrăm pe experiența utilizatorului, design responsiv și funcționalitate perfectă pe toate dispozitivele.</p>
+                    <p>Fie că ai nevoie de un site web informațional simplu sau de o platformă complexă de e-commerce, avem expertiza necesară pentru a-ți aduce viziunea la viață.</p>
+                    <div class="uk-grid-small uk-child-width-1-2@s uk-margin-medium-top" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                <h4>Design Responsiv</h4>
+                                <p>Site-uri web adaptabile care arată excelent pe toate dispozitivele.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                <h4>Optimizat pentru SEO</h4>
+                                <p>Construit cu motoarele de căutare în minte pentru îmbunătățirea clasamentelor.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                <h4>Performanță Optimizată</h4>
+                                <p>Pagini cu încărcare rapidă pentru o experiență mai bună a utilizatorului.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                <h4>Sigur și Fiabil</h4>
+                                <p>Construit cu cele mai bune practici de securitate și actualizări regulate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Marketing Digital -->
+    <section id="digital-marketing" class="uk-section uk-section-default">
+        <div class="uk-container">
+            <div class="uk-grid-large uk-flex-middle" uk-grid>
+                <div class="uk-width-3-5@m uk-flex-first@m">
+                    <h2>Marketing Digital</h2>
+                    <hr class="uk-divider-small">
+                    <p class="uk-text-lead">Soluții strategice de marketing pentru a-ți crește vizibilitatea online și a genera conversii.</p>
+                    <p>În peisajul digital actual, o prezență online puternică este esențială. Echipa noastră de marketing digital dezvoltă strategii complete adaptate obiectivelor tale specifice și publicului țintă.</p>
+                    <p>De la optimizarea pentru motoarele de căutare la administrarea social media și crearea de conținut, utilizăm cele mai eficiente canale pentru a ajunge la potențialii tăi clienți și a genera interacțiuni semnificative.</p>
+                    <div class="uk-child-width-1-2@s uk-margin-medium-top" uk-grid>
+                        <div>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Optimizare pentru Motoare de Căutare (SEO)</li>
+                                <li>Publicitate Pay-Per-Click</li>
+                                <li>Marketing pe Social Media</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Campanii de Email Marketing</li>
+                                <li>Strategie și Creare de Conținut</li>
+                                <li>Analiză și Raportare</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@m">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push; autoplay: true; autoplay-interval: 5000">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Marketing Digital" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Social Media" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Analiză" uk-cover>
+                            </li>
+                        </ul>
+                        <div class="uk-position-bottom-center uk-position-small">
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Consultanță în Afaceri -->
+    <section id="business-consulting" class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <div class="uk-grid-large uk-flex-middle" uk-grid>
+                <div class="uk-width-2-5@m">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 5000">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Consultanță în Afaceri" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Planificare Strategică" uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Creșterea Afacerii" uk-cover>
+                            </li>
+                        </ul>
+                        <div class="uk-position-bottom-center uk-position-small">
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-3-5@m">
+                    <h2>Consultanță în Afaceri</h2>
+                    <hr class="uk-divider-small">
+                    <p class="uk-text-lead">Îndrumare expertă pentru optimizarea operațiunilor și accelerarea creșterii.</p>
+                    <p>Serviciile noastre de consultanță în afaceri oferă perspective strategice și recomandări acționabile pentru a ajuta afacerea ta să depășească provocările și să valorifice oportunitățile.</p>
+                    <p>Cu decenii de experiență combinată în diverse industrii, consultanții noștri lucrează îndeaproape cu tine pentru a înțelege nevoile tale unice și a dezvolta soluții personalizate care generează rezultate măsurabile.</p>
+                    <div class="uk-grid-small uk-child-width-1-2@s uk-margin-medium-top" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                <h4>Planificare Strategică</h4>
+                                <p>Dezvoltăm planuri clare pentru o creștere sustenabilă.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                <h4>Optimizare Procese</h4>
+                                <p>Eficientizăm operațiunile pentru maximă eficiență.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                <h4>Analiză de Piață</h4>
+                                <p>Identificăm oportunități și avantaje competitive.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                <h4>Planificare Financiară</h4>
+                                <p>Optimizăm alocarea resurselor și strategiile financiare.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procesul Nostru -->
+    <section class="uk-section uk-section-primary uk-light">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>Procesul Nostru</span></h2>
+            <p class="uk-text-center uk-margin-medium-bottom">Cum lucrăm cu tine pentru a livra rezultate excepționale</p>
+            
+            <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-animation-toggle" tabindex="0">
+                        <div class="uk-animation-scale-up uk-transform-origin-bottom">
+                            <div class="uk-card uk-card-body uk-card-secondary">
+                                <span class="uk-text-large uk-text-bold">01</span>
+                                <h3 class="uk-card-title">Descoperire</h3>
+                                <p>Ascultăm pentru a înțelege obiectivele, provocările și viziunea afacerii tale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-animation-toggle" tabindex="0">
+                        <div class="uk-animation-scale-up uk-transform-origin-bottom">
+                            <div class="uk-card uk-card-body uk-card-secondary">
+                                <span class="uk-text-large uk-text-bold">02</span>
+                                <h3 class="uk-card-title">Strategie</h3>
+                                <p>Dezvoltăm un plan personalizat adaptat nevoilor tale specifice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-animation-toggle" tabindex="0">
+                        <div class="uk-animation-scale-up uk-transform-origin-bottom">
+                            <div class="uk-card uk-card-body uk-card-secondary">
+                                <span class="uk-text-large uk-text-bold">03</span>
+                                <h3 class="uk-card-title">Implementare</h3>
+                                <p>Experții noștri execută strategia cu precizie și atenție.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-animation-toggle" tabindex="0">
+                        <div class="uk-animation-scale-up uk-transform-origin-bottom">
+                            <div class="uk-card uk-card-body uk-card-secondary">
+                                <span class="uk-text-large uk-text-bold">04</span>
+                                <h3 class="uk-card-title">Optimizare</h3>
+                                <p>Măsurăm, rafinăm și îmbunătățim continuu pentru rezultate optime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Portofoliu cu Lightbox -->
+    <section class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>Portofoliul Nostru</span></h2>
+            <p class="uk-text-center uk-margin-medium-bottom">Explorează proiectele noastre de succes</p>
+            
+            <div uk-grid uk-lightbox="animation: slide">
+                <div class="uk-width-1-3@m uk-width-1-2@s">
+                    <a href="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Dezvoltare Website E-commerce">
+                        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Website E-commerce">
+                        <div class="uk-position-center uk-panel"><h4 class="uk-visible@s">Website E-commerce</h4></div>
+                    </a>
+                </div>
+                <div class="uk-width-1-3@m uk-width-1-2@s">
+                    <a href="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Campanie Marketing Digital">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Campanie Marketing Digital">
+                        <div class="uk-position-center uk-panel"><h4 class="uk-visible@s">Marketing Digital</h4></div>
+                    </a>
+                </div>
+                <div class="uk-width-1-3@m uk-width-1-2@s">
+                    <a href="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Proiect Consultanță în Afaceri">
+                        <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Consultanță în Afaceri">
+                        <div class="uk-position-center uk-panel"><h4 class="uk-visible@s">Consultanță în Afaceri</h4></div>
+                    </a>
+                </div>
+                <div class="uk-width-1-3@m uk-width-1-2@s">
+                    <a href="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Dezvoltare Aplicație Mobilă">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Dezvoltare Aplicație Mobilă">
+                        <div class="uk-position-center uk-panel"><h4 class="uk-visible@s">Aplicație Mobilă</h4></div>
+                    </a>
+                </div>
+                <div class="uk-width-1-3@m uk-width-1-2@s">
+                    <a href="https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Administrare Social Media">
+                        <img src="https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Administrare Social Media">
+                        <div class="uk-position-center uk-panel"><h4 class="uk-visible@s">Social Media</h4></div>
+                    </a>
+                </div>
+                <div class="uk-width-1-3@m uk-width-1-2@s">
+                    <a href="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Planificare Strategică de Afaceri">
+                        <img src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Planificare Strategică de Afaceri">
+                        <div class="uk-position-center uk-panel"><h4 class="uk-visible@s">Planificare Strategică</h4></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Prețuri cu Tabel -->
+    <section class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>Prețurile Noastre</span></h2>
+            <p class="uk-text-center uk-margin-medium-bottom">Prețuri transparente pentru serviciile noastre de bază</p>
+            
+            <div class="uk-overflow-auto">
+                <table class="uk-table uk-table-divider uk-table-hover uk-table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Serviciu</th>
+                            <th>Basic</th>
+                            <th>Standard</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dezvoltare Web</td>
+                            <td>1.500€ - 5 Pagini</td>
+                            <td>3.000€ - 10 Pagini</td>
+                            <td>5.000€+ - Personalizat</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing Digital</td>
+                            <td>800€/lună</td>
+                            <td>1.500€/lună</td>
+                            <td>3.000€+/lună</td>
+                        </tr>
+                        <tr>
+                            <td>Consultanță</td>
+                            <td>2.000€ - Basic</td>
+                            <td>4.000€ - Standard</td>
+                            <td>7.500€+ - Complet</td>
+                        </tr>
+                        <tr>
+                            <td>Suport</td>
+                            <td>Doar Email</td>
+                            <td>Email + Telefon</td>
+                            <td>Suport 24/7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="uk-text-center uk-margin-medium-top">Toate pachetele pot fi personalizate pentru a răspunde nevoilor tale specifice. <a href="#contact" uk-scroll>Contactează-ne</a> pentru o ofertă personalizată.</p>
+        </div>
+    </section>
+
+    <!-- Secțiunea Formular Contact -->
+    <section id="contact" class="uk-section uk-section-secondary uk-light">
+        <div class="uk-container uk-container-small">
+            <h2 class="uk-heading-line uk-text-center"><span>Contactează-ne</span></h2>
+            <p class="uk-text-center uk-margin-medium-bottom">Pregătit să discutăm despre proiectul tău? Contactează echipa noastră astăzi!</p>
+            
+            <form class="uk-form-stacked">
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="name">Nume</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="name" type="text" placeholder="Numele tău">
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="email">Email</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="email" type="email" placeholder="Adresa ta de email">
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="service">Serviciu de Interes</label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select" id="service">
+                            <option>Dezvoltare Web</option>
+                            <option>Marketing Digital</option>
+                            <option>Consultanță în Afaceri</option>
+                            <option>Multiple Servicii</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="budget">Buget Estimat</label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select" id="budget">
+                            <option>Sub 1.000€</option>
+                            <option>1.000€ - 5.000€</option>
+                            <option>5.000€ - 10.000€</option>
+                            <option>Peste 10.000€</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="message">Detalii Proiect</label>
+                    <div class="uk-form-controls">
+                        <textarea class="uk-textarea" id="message" rows="5" placeholder="Spune-ne despre proiectul tău"></textarea>
+                    </div>
+                </div>
+                
+                <div class="uk-margin uk-text-center">
+                    <button class="uk-button uk-button-primary" type="submit">Solicită Consultație</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="uk-section uk-section-secondary uk-padding-small">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <h4>Horizon</h4>
+                    <p>Oferim soluții inovatoare pentru afaceri moderne din 2010.</p>
+                    <div class="uk-flex">
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="#" class="uk-icon-button" uk-icon="linkedin"></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Link-uri Rapide</h4>
+                    <ul class="uk-list">
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="about.html">Despre</a></li>
+                        <li><a href="services.html">Servicii</a></li>
+                        <li><a href="#contact" uk-scroll>Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="uk-list">
+                        <li><span uk-icon="icon: location"></span> Strada Afacerilor 123, Oraș</li>
+                        <li><span uk-icon="icon: receiver"></span> +40 755 123 456</li>
+                        <li><span uk-icon="icon: mail"></span> contact@horizon.ro</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="uk-text-center">
+                <p>&copy; 2025 Horizon. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Buton Totop -->
+    <a href="#" class="uk-totop uk-position-fixed uk-position-bottom-right uk-margin-right uk-margin-bottom" uk-totop uk-scroll></a>
+</body>
+</html>
